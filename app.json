@@ -1,0 +1,57 @@
+{
+  "expo": {
+    "name": "NiHao",
+    "slug": "NiHao",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "in.calicon.nihao"
+    },
+    "android": {
+      "package": "in.calicon.nihao",
+      "adaptiveIcon": {
+        "backgroundColor": "#000000",
+        "foregroundImage": "./assets/adaptive-icon-foreground.png"
+      },
+      "permissions": [
+        "USE_BIOMETRIC",
+        "USE_FINGERPRINT",
+        "POST_NOTIFICATIONS",
+        "android.permission.USE_BIOMETRIC",
+        "android.permission.USE_FINGERPRINT"
+      ],
+      "predictiveBackGestureEnabled": false
+    },
+    "plugins": [
+      "expo-secure-store",
+      [
+        "expo-local-authentication",
+        {
+          "faceIDPermission": "Allow NiHao to use biometrics for unlock."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/calicon-logo.png",
+          "color": "#000000"
+        }
+      ],
+      "expo-font"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "faca7628-48ff-4086-8b52-803c6a5e6d4f"
+      }
+    },
+    "owner": "calicon-team"
+  }
+}

@@ -1,0 +1,10 @@
+# Keep EAS uploads small and avoid scanning outside this project
+.git/
+.expo/
+node_modules/
+android/
+ios/
+*.log
+.env
+.env.*
+!.env.example
